@@ -24,7 +24,7 @@
                 @rating.HospitalName
             </td>
             <td>
-                @rating.OverallCareRating
+                @string.Format("{0}/10", Decimal.Round(rating.OverallCareRating * 10, 0))
             </td>
         </tr>
     }
