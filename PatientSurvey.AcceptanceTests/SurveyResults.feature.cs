@@ -132,34 +132,6 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [Xunit.FactAttribute()]
-        [Xunit.TraitAttribute("FeatureTitle", "SurveyResults")]
-        [Xunit.TraitAttribute("Description", "View average overall care ratings for a hospital")]
-        public virtual void ViewAverageOverallCareRatingsForAHospital()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View average overall care ratings for a hospital", ((string[])(null)));
-#line 17
-this.ScenarioSetup(scenarioInfo);
-#line 6
-this.FeatureBackground();
-#line 18
- testRunner.When("I view the hospital list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Hospital",
-                        "Average rating of the care received"});
-            table2.AddRow(new string[] {
-                        "A",
-                        "2/10"});
-            table2.AddRow(new string[] {
-                        "B",
-                        "1/10"});
-#line 19
- testRunner.Then("I should see the following average overall care ratings:", ((string)(null)), table2, "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable
