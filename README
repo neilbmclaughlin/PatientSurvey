@@ -2,9 +2,8 @@ HSCIC Patient Survey Exercise Prototype
 
 Todo
 
-* Consider replacing file based persistence with something more performant (MSSQL, MongoDB, etc)
-* Use bootstrap to format hospitals page
-* Remove un-needed controllers and other code
-* Move services into their own project for reuse
-* Add WebAPI controllers to expose data provided by services for syndication
-* Add smoke tests which use headless browser (eg PhantomJS) against deployed application to have full end to end tests
+*  Consider replacing file based persistence with something more performant (MSSQL, MongoDB, etc)
+*  Remove un-needed controllers and other code
+*  Move services into their own project for reuse
+*  Add WebAPI controllers to expose data provided by services for syndication
+*  Add smoke tests which use headless browser (eg PhantomJS) against deployed application to have full end to end tests
