@@ -13,3 +13,11 @@ Background:
 Scenario: Retrieve a list of hospitals
 	When I view the hospital list
 	Then hospitals 'A,B' should be in the list
+
+Scenario: View average overall care ratings for a hospital
+	When I view the hospital list
+	Then I should see the following average overall care ratings:
+	| Hospital | Average rating of the care received |
+	| A        | 2/10                                |
+	| B        | 1/10                                |
+

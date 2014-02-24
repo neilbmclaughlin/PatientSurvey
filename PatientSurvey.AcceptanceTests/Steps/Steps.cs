@@ -63,6 +63,23 @@ namespace PatientSurvey.AcceptanceTests.Steps
                 .ForEach(h => surveyResult.Ratings.Should().Contain(r => r.HospitalName == h, string.Format("Hospital {0} not found in ratings", h)));
 
         }
+
+        [Then(@"I should see the following average overall care ratings:")]
+        public void ThenIShouldSeeTheFollowingAverageOverallCareRatings(Table table)
+        {
+
+            var viewResult = _actionResult as ViewResult;
+            var surveyResult = viewResult.Model as SurveyResults;
+
+            foreach (var row in table.Rows)
+            {
+                var ratings = row["Average rating of the care received"].Split('/');
+                var expectedRating = decimal.Parse(ratings[0]) / decimal.Parse(ratings[1]);
+                var hospitalRating = surveyResult.Ratings.FirstOrDefault(r => r.HospitalName == row["Hospital"]);
+                hospitalRating.OverallCareRating.Should().Be(expectedRating);
+            }
+        }
+
         // ReSharper restore PossibleNullReferenceException
 
     }

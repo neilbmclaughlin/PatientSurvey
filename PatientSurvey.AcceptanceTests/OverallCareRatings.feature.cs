@@ -18,15 +18,15 @@ namespace PatientSurvey.AcceptanceTests
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class SurveyResultsFeature : Xunit.IUseFixture<SurveyResultsFeature.FixtureData>, System.IDisposable
+    public partial class AverageOverallCareRatingsFeature : Xunit.IUseFixture<AverageOverallCareRatingsFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "SurveyResults.feature"
+#line 1 "OverallCareRatings.feature"
 #line hidden
         
-        public SurveyResultsFeature()
+        public AverageOverallCareRatingsFeature()
         {
             this.TestInitialize();
         }
@@ -34,8 +34,8 @@ namespace PatientSurvey.AcceptanceTests
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SurveyResults", "As a member of the public\r\nI want to be able to view a list of hospitals\r\nSo that" +
-                    " I can see which hospitals are included in the study.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Average Overall Care Ratings", "As a member of the public\nI want to see the average (mean) overall rating of the " +
+                    "care received for each hospital.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,7 +66,7 @@ namespace PatientSurvey.AcceptanceTests
         
         public virtual void FeatureBackground()
         {
-#line 6
+#line 5
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "First Name",
@@ -83,15 +83,15 @@ namespace PatientSurvey.AcceptanceTests
                         "4/10",
                         "4/10",
                         "7/10",
-                        "8/10"});
+                        "6/10"});
             table1.AddRow(new string[] {
                         "Patient",
                         "Two",
-                        "B",
+                        "A",
                         "6/10",
                         "5/10",
                         "5/10",
-                        "6/10"});
+                        "7/10"});
             table1.AddRow(new string[] {
                         "Patient",
                         "Three",
@@ -99,13 +99,13 @@ namespace PatientSurvey.AcceptanceTests
                         "2/10",
                         "5/10",
                         "6/10",
-                        "9/10"});
-#line 7
+                        "8/10"});
+#line 6
  testRunner.Given("the following survey data:", ((string)(null)), table1, "Given ");
 #line hidden
         }
         
-        public virtual void SetFixture(SurveyResultsFeature.FixtureData fixtureData)
+        public virtual void SetFixture(AverageOverallCareRatingsFeature.FixtureData fixtureData)
         {
         }
         
@@ -115,34 +115,16 @@ namespace PatientSurvey.AcceptanceTests
         }
         
         [Xunit.FactAttribute()]
-        [Xunit.TraitAttribute("FeatureTitle", "SurveyResults")]
-        [Xunit.TraitAttribute("Description", "Retrieve a list of hospitals")]
-        public virtual void RetrieveAListOfHospitals()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Retrieve a list of hospitals", ((string[])(null)));
-#line 13
-this.ScenarioSetup(scenarioInfo);
-#line 6
-this.FeatureBackground();
-#line 14
- testRunner.When("I view the hospital list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
- testRunner.Then("hospitals \'A,B\' should be in the list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.FactAttribute()]
-        [Xunit.TraitAttribute("FeatureTitle", "SurveyResults")]
+        [Xunit.TraitAttribute("FeatureTitle", "Average Overall Care Ratings")]
         [Xunit.TraitAttribute("Description", "View average overall care ratings for a hospital")]
         public virtual void ViewAverageOverallCareRatingsForAHospital()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View average overall care ratings for a hospital", ((string[])(null)));
-#line 17
+#line 12
 this.ScenarioSetup(scenarioInfo);
-#line 6
+#line 5
 this.FeatureBackground();
-#line 18
+#line 13
  testRunner.When("I view the hospital list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -150,11 +132,8 @@ this.FeatureBackground();
                         "Average rating of the care received"});
             table2.AddRow(new string[] {
                         "A",
-                        "2/10"});
-            table2.AddRow(new string[] {
-                        "B",
-                        "1/10"});
-#line 19
+                        "7/10"});
+#line 14
  testRunner.Then("I should see the following average overall care ratings:", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -167,12 +146,12 @@ this.FeatureBackground();
             
             public FixtureData()
             {
-                SurveyResultsFeature.FeatureSetup();
+                AverageOverallCareRatingsFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                SurveyResultsFeature.FeatureTearDown();
+                AverageOverallCareRatingsFeature.FeatureTearDown();
             }
         }
     }
