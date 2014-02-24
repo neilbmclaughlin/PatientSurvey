@@ -58,6 +58,7 @@ namespace PatientSurvey.App_Start
         {
             kernel.Bind<IRatingsRepository>().To<RatingsRepository>();
             kernel.Bind<ISurveyService>().To<SurveyService>();
+            kernel.Bind<IRatingsProcessingService>().To<RatingsProcessingService>();
         }        
     }
 }
