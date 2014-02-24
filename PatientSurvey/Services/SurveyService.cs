@@ -18,14 +18,9 @@ namespace PatientSurvey.Services
 
         public IEnumerable<HospitalRating> GetSurveySummary()
         {
-            var list = _ratingsRepository.GetAll().ToList();
-
-
-
-            var hospitalRatings = _ratingsProcessingService.GetHospitalRatings(list);
-
+            var patientHospitalRatings = _ratingsRepository.GetAll().ToList();
+            var hospitalRatings = _ratingsProcessingService.GetHospitalRatings(patientHospitalRatings);
             return hospitalRatings;
-
         }
 
 

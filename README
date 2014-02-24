@@ -1,9 +1,15 @@
 HSCIC Patient Survey Exercise Prototype
 
+Notes:
+1) Requires Specflow addin for VS2013 
+2) You will need to run the SurveyResults integration tests to populate the test data before running the app
+
 Todo
 
-*  Consider replacing file based persistence with something more performant (MSSQL, MongoDB, etc)
-*  Remove un-needed controllers and other code
-*  Move services into their own project for reuse
-*  Add WebAPI controllers to expose data provided by services for syndication
-*  Add smoke tests which use headless browser (eg PhantomJS) against deployed application to have full end to end tests
+  * Consider replacing file based persistence with something more performant (MSSQL, MongoDB, etc)
+  * Remove un-needed controllers and other code
+  * Move services into their own project for reuse
+  * Add WebAPI controllers to expose data provided by services for syndication
+  * Add smoke tests which use headless browser (eg PhantomJS) against deployed application to have full end to end tests
+  * Extend unit and integration tests to be more comprehensive
+  * Add exception handling
