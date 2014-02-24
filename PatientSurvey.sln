@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientSurvey", "PatientSurvey\PatientSurvey.csproj", "{5D13C210-96EA-49CD-8CF2-5945547FB717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientSurvey.AcceptanceTests", "PatientSurvey.AcceptanceTests\PatientSurvey.AcceptanceTests.csproj", "{1FEE8D45-216D-43D0-A24C-1AF4DF63B809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientSurvey.UnitTests", "PatientSurvey.UnitTests\PatientSurvey.UnitTests.csproj", "{983EA531-E782-4332-91B0-50E98B77E07F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E2CC5843-E5A1-40F5-81CC-65620B10B1B3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D13C210-96EA-49CD-8CF2-5945547FB717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D13C210-96EA-49CD-8CF2-5945547FB717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D13C210-96EA-49CD-8CF2-5945547FB717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D13C210-96EA-49CD-8CF2-5945547FB717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEE8D45-216D-43D0-A24C-1AF4DF63B809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEE8D45-216D-43D0-A24C-1AF4DF63B809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEE8D45-216D-43D0-A24C-1AF4DF63B809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEE8D45-216D-43D0-A24C-1AF4DF63B809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983EA531-E782-4332-91B0-50E98B77E07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983EA531-E782-4332-91B0-50E98B77E07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983EA531-E782-4332-91B0-50E98B77E07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983EA531-E782-4332-91B0-50E98B77E07F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

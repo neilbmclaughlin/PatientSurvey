@@ -1,0 +1,34 @@
+﻿@model PatientSurvey.Models.SurveyResults
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>Hospital</th>
+            <th>Overall Care Rating</th>
+        </tr>
+    
+    @foreach (var rating in Model.Ratings) {
+        <tr>
+            <td>
+                @rating.HospitalName
+            </td>
+            <td>
+                @rating.OverallCareRating
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
